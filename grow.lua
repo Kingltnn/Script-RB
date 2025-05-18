@@ -10,7 +10,7 @@ local Window =
         Name = "Grow a Garden | PS99",
         Icon = "scroll-text", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
         LoadingTitle = "Loading",
-        LoadingSubtitle = "ERm?",
+        LoadingSubtitle = "KingLTN",
         Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
         DisableRayfieldPrompts = false,
         DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
@@ -50,11 +50,17 @@ local MainTab = Window:CreateTab("Main", "earth") -- Title, Image
 ----------------------------------------------------------------------
 -- All Toggles Control/Loop
 
-local selectedSellPets = {}
-local autoSellEnabled = false
-local selectedEggs = {}
-local autoBuyEnabled = false
-local autoHarvestEnabled = false
+local selectedSellPets = {"Pixel Angelus", "Pixel Agony", "Pixel Demon", "Pixel Yeti",
+    "Pixel Griffin", "Pixel Tiger",  "Pixel Wolf", "Pixel Monkey",
+    "Pixel Bee", "Pixel Goblin"}
+local autoSellEnabled = true
+local selectedEggs = {"Baby Pixel Demon", "Baby Pixel Yeti", "Baby Pixel Griffin",
+    "Baby Pixel Tiger", "Baby Pixel Wolf", "Baby Pixel Monkey",
+    "Baby Pixel Bee", "Baby Pixel Goblin", "Baby Pixel Bunny",
+    "Baby Pixel Corgi", "Baby Pixel Piggy", "Baby Pixel Cat",
+    "Baby Pixel Chick"}
+local autoBuyEnabled = true
+local autoHarvestEnabled = true
 
 ----------------------------------------------------------------------
 -- All Services/Locals
